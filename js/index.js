@@ -8,7 +8,7 @@
  *  1.0.1 - 2022-02-23 : Juan Gaudino : Ajustes en los textos y borrar codigo innecesario
  */
 
-// Declaración de valores unitarios
+// Declaración de valores unitarios y variables
 
 const unitarioPAI = 1200;
 const unitarioCPM = 200;
@@ -17,6 +17,9 @@ const metroCuadradoBack = 730;
 const metrosCuadrados = (ancho, alto) => {
     return ancho * alto * cantidad;
 }
+let material = "";
+let cantidad = 0;
+let precio = 0;
 
 // Declaración de funciones
 
@@ -107,6 +110,7 @@ class Producto {
 }
 
 const PRODUCTO = new Producto(material, calcularPrecio, cantidad);
+
 
 
 const agregarAlCarrito = (producto) => {
